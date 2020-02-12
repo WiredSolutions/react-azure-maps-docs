@@ -1,0 +1,66 @@
+.sidebar {
+  font-size: 16px;
+  background-color: #fff;
+  width: 20rem;
+  position: fixed;
+  z-index: 10;
+  top: 3.6rem;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-right: 1px solid #eaecef;
+  overflow-y: auto;
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__links {
+    padding: 1.5rem 0;
+
+    .active > a {
+      color: #960b3b;
+      font-weight: 600;
+      background: #0026391c;
+      border-left: 3px solid #960b3b;
+    }
+  }
+
+  &__group > ul {
+    padding: 1rem 0;
+  }
+
+  &__groupName {
+    padding: 0.35rem 1.5rem 0.35rem 1.25rem;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  &__subGroupName {
+    opacity: 0.5;
+    font-size: 0.95em;
+    padding: 0.35rem 1.5rem 0.35rem 2rem;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #2c3e50;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border-left: 3px solid transparent;
+
+    &--subgroup {
+      padding: 0.5rem 1rem 0.5rem 3rem;
+    }
+
+    &:hover {
+      background: #0026391c;
+      color: #960b3b;
+    }
+  }
+}
