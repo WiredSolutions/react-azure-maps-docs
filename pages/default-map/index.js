@@ -8,12 +8,11 @@ import "../../styles/style.scss";
 const Home = () => (
   <div>
     <Head>
-      <title>Installation</title>
+      <title>Default Map</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Navbar />
     <Sidebar />
-    FOooo
   </div>
 );
 

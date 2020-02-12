@@ -7,7 +7,28 @@ body {
   color: #2c3e50;
 }
 
+pre {
+  background: #002639 !important;
+}
+
 .page {
   padding-left: 20rem;
   padding-top: 3.6rem;
+
+  &__content {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+
+    h1 {
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 0.3rem;
+      margin-top: -3.1rem;
+      padding-top: 4.6rem;
+    }
+  }
 }

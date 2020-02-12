@@ -6,19 +6,36 @@
   color: #ffffff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 10;
   box-sizing: border-box;
   height: 3.6rem;
+  padding: 0 1.5rem;
 
   h4 {
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-  };
+  }
 
-  img {
-  height: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    img {
+      height: 100%;
+      padding-right: 1rem;
+    }
+  }
+
+  .github-link {
+    svg {
+      fill: #ffffff;
+      height: 30px;
+      width: 30px;
+      &:hover {
+        fill: #960b3b;
+      }
+    }
+  }
 }

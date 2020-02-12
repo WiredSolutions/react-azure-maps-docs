@@ -19,19 +19,10 @@ const menuGroups = [
           {
             label: "yarn",
             url: "#yarn"
-          }
-        ]
-      },
-      {
-        label: "foo",
-        url: "/foo"
-      },
-      {
-        subGroupName: "subGroup",
-        subGroup: [
+          },
           {
-            label: "bar",
-            url: "#bar"
+            label: "Basic usage",
+            url: "#usage"
           }
         ]
       }
@@ -42,11 +33,11 @@ const menuGroups = [
     group: [
       {
         label: "Default map",
-        url: "/default"
+        url: "/default-map"
       },
       {
-        label: "foo2",
-        url: "/foo2"
+        label: "foo",
+        url: "/foo"
       },
       {
         subGroupName: "Layers",
