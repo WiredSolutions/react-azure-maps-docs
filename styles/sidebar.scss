@@ -1,7 +1,7 @@
 .sidebar {
-  font-size: 16px;
   background-color: #fff;
-  width: 20rem;
+  font-size: 15px;
+  width: 16.4rem;
   position: fixed;
   z-index: 10;
   top: 3.6rem;
@@ -10,6 +10,9 @@
   box-sizing: border-box;
   border-right: 1px solid #eaecef;
   overflow-y: auto;
+
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
 
   a {
     text-decoration: none;
@@ -62,5 +65,21 @@
       background: #0026391c;
       color: #960b3b;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    font-size: 16px;
+    width: 16.4rem;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    font-size: 16px;
+    width: 20rem;
+    transform: translateX(0);
   }
 }

@@ -36,6 +36,12 @@ const Installation = () => {
           </pre>
 
           <h2 id="usage">Basic Usage</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
+            vero repellendus minus, blanditiis porro incidunt! Quis, veniam!
+            Voluptates quia possimus, impedit molestiae delectus libero nihil
+            odio quae est inventore.
+          </p>
           <pre>
             <code className="language-javascript">
               {`const DefaultMap = () => {

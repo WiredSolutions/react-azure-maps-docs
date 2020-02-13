@@ -28,6 +28,20 @@
     }
   }
 
+  &__button {
+    padding-right: 1rem;
+    cursor: pointer;
+    display: flex;
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: #ffffff;
+      &:hover {
+        fill: #960b3b;
+      }
+    }
+  }
+
   .github-link {
     svg {
       fill: #ffffff;
@@ -36,6 +50,18 @@
       &:hover {
         fill: #960b3b;
       }
+    }
+  }
+
+  &--sidebar-active {
+    + .sidebar {
+      transform: translateX(0) !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__button {
+      display: none;
     }
   }
 }
