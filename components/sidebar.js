@@ -9,6 +9,10 @@ const menuGroups = [
     groupName: "Getting Started",
     group: [
       {
+        label: "Introduction",
+        url: "/introduction",
+      },
+      {
         label: "Installation",
         url: "/installation",
         children: [

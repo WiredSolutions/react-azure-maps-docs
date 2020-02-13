@@ -11,6 +11,19 @@ pre {
   background: #002639 !important;
 }
 
+.description {
+  padding: 20px 10px;
+  background: #f3f5f7;
+  border-left: 5px solid #002639;
+  margin-bottom: 20px;
+}
+
+.description span {
+  display: block;
+  font-weight: 600;
+}
+
+
 .page {
   padding-left: 0;
   padding-top: 3.6rem;

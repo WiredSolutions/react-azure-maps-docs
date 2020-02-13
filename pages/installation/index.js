@@ -24,6 +24,16 @@ const Installation = () => {
       <main className="page">
         <div className="page__content">
           <h1>Installation</h1>
+          <div>
+            <h3> Map Setup </h3>
+            <p>
+              To inject react-azure-maps to your React App you must just add package by your package manager
+            and get Azure Map subscription key
+            </p>
+            <div className="description">
+              Get an Azure Maps key at  <a href="https://azure.com/maps" target="_blank" rel="noopener noreferrer">https://azure.com/maps</a>
+            </div>
+          </div>
           <h2 id="npm">NPM</h2>
 
           <pre>
@@ -37,55 +47,30 @@ const Installation = () => {
 
           <h2 id="usage">Basic Usage</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
-            vero repellendus minus, blanditiis porro incidunt! Quis, veniam!
-            Voluptates quia possimus, impedit molestiae delectus libero nihil
-            odio quae est inventore.
+            Create IAzureMapOptions object with you key and initial map properties then pass it as options props in Azure Map.
+            AzureMap component should be wrap by AzureMapProvider. Map also must have contiarner that specifies the height of the map.
+          </p>
+          <p>
+
           </p>
           <pre>
             <code className="language-javascript">
-              {`const DefaultMap = () => {
-  const position = new data.Position(-100.01, 45.01)
-  const option: IAzureMapOptions = useMemo(() => {
-    return {
-      authOptions: {
+              {`const option: IAzureMapOptions = {
+    authOptions: {
         authType: AuthenticationType.subscriptionKey,
         subscriptionKey: key
-      },
-      center: [-100.01, 45.01],
-      zoom: 12,
-      view: 'Auto'
-    }
-  }, [])
-  return (
-    <div style={{
-        height: '300px'
-    }}>
-      <AzureMapsProvider>
-        <AzureMap options={option}>
-          <AzureMapDataSourceProvider id={'default DataSourceProvider'}>
-            <AzureMapLayerProvider
-              options={{}}
-              type={'SymbolLayer'}
-            ></AzureMapLayerProvider>
-            <AzureMapFeature
-              type="Point"
-              coordinate={position}
-              properties={{
-                title: 'Microsoft',
-                icon: 'pin-round-blue'
-              }}
-            ></AzureMapFeature>
-          </AzureMapDataSourceProvider>
-          <AzureMapHtmlMarker
-            markerContent={<div className="pulseIcon"></div>}
-            options={{position: [-110, 45]}}
-          />
-        </AzureMap>
-      </AzureMapsProvider>
+    },
+}
+
+const DefaultMap: React.FC = () => (
+    <div style={{height: '300px'}}>
+        <AzureMapsProvider>
+            <AzureMap options={option}>
+            </AzureMap>
+        </AzureMapsProvider>
     </div>
-  )
-}`}
+)
+`}
             </code>
           </pre>
         </div>
