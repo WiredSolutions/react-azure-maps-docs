@@ -33,25 +33,25 @@ const menuGroups = [
     ]
   },
   {
-    groupName: "Components",
+    groupName: "Examples",
     group: [
       {
         label: "Default map",
         url: "/default-map"
       },
-      {
-        label: "foo",
-        url: "/foo"
-      },
-      {
-        subGroupName: "Layers",
-        subGroup: [
-          {
-            label: "bar",
-            url: "#bar"
-          }
-        ]
-      }
+      // {
+      //   label: "foo",
+      //   url: "/foo"
+      // },
+      // {
+      //   subGroupName: "Layers",
+      //   subGroup: [
+      //     {
+      //       label: "bar",
+      //       url: "#bar"
+      //     }
+      //   ]
+      // }
     ]
   }
 ];
