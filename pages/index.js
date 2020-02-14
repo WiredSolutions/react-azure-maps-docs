@@ -13,14 +13,15 @@ const Introduction = () => {
         <div className="page__content">
           <h1>Introduction</h1>
           <p>
-            React Azure Maps is a react wrapper for Azure Maps. The whole
+            <a href={'https://github.com/WiredSolutions/react-azure-maps '} target="_blank" >
+              React Azure Maps </a>is a react wrapper for Azure Maps. The whole
             library is written in typescript and uses React 16.8+
           </p>
           <h2 id="playgroud">Playground</h2>
           <p>
             On playgroud you can play with samples. Run it locally a check how
             we implement them. A lot of features are from&nbsp;
-            <a href={"https://azuremapscodesamples.azurewebsites.net/"}>
+            <a href={"https://azuremapscodesamples.azurewebsites.net/"} target="_blank">
               Azure Maps Code Sample
             </a>
           </p>
@@ -29,17 +30,17 @@ const Introduction = () => {
           <p>
             While creating this package we were inspired:
             <div>
-              <a href={"https://azuremapscodesamples.azurewebsites.net/"}>
+              <a href={"https://azuremapscodesamples.azurewebsites.net/"} target="_blank">
                 Azure Maps Code Sample
               </a>
             </div>
             <div>
-              <a href={"https://github.com/Acaisoft/angular-azure-maps"}>
+              <a href={"https://github.com/Acaisoft/angular-azure-maps"} target="_blank">
                 Angular Azure Map
               </a>
             </div>
             <div>
-              <a href={"https://rickyruiz.github.io/vue-azure-maps/"}>
+              <a href={"https://rickyruiz.github.io/vue-azure-maps/"} target="_blank">
                 Vue Azure Maps
               </a>
             </div>
@@ -47,12 +48,17 @@ const Introduction = () => {
           <h2 id="docs">Documentation</h2>
           <p>
             <div>
-              <a href={"https://docs.microsoft.com/en-us/azure/azure-maps/"}>
+              <a href={"https://wiredsolutions.github.io/react-azure-maps/"} target="_blank">
+                React Azure Map Types Documentation
+              </a>
+            </div>
+            <div>
+              <a href={"https://docs.microsoft.com/en-us/azure/azure-maps/"} target="_blank">
                 Azure Maps Documentation
               </a>
             </div>
             <div>
-              <a href={"https://www.npmjs.com/package/azure-maps-control"}>
+              <a href={"https://www.npmjs.com/package/azure-maps-control"} target="_blank">
                 Azure Maps Control
               </a>
             </div>
