@@ -10,7 +10,7 @@ const menuGroups = [
     group: [
       {
         label: "Introduction",
-        url: "/introduction",
+        url: "/"
       },
       {
         label: "Installation",
@@ -38,7 +38,7 @@ const menuGroups = [
       {
         label: "Default map",
         url: "/default-map"
-      },
+      }
       // {
       //   label: "foo",
       //   url: "/foo"
