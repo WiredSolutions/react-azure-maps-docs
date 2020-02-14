@@ -17,6 +17,9 @@
   a {
     text-decoration: none;
     display: block;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   ul {
