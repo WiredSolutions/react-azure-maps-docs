@@ -13,6 +13,7 @@ const Home = () => {
             <main className="page">
                 <div className="page__content">
                     <h1>Default Map Example</h1>
+                    <h2 id="description">Description:</h2>
                     <h3>
                         Simple example of react-azure-maps using React Functional Component.
                     </h3>
@@ -69,6 +70,7 @@ const Home = () => {
                         }} src={defaultMap} />
                     </div>
                     <h2 id="code">Code:</h2>
+                    <a href={'https://github.com/WiredSolutions/react-azure-maps-playground/blob/master/src/examples/DefaultMap.tsx'} > Source Code </a>
                     <pre>
             <code className="language-jsx">
               {`import React from 'react'

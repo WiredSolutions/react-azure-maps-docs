@@ -37,21 +37,22 @@ const menuGroups = [
     group: [
       {
         label: "Default map",
-        url: "/default-map"
+        url: "/default-map",
+        children: [
+          {
+            label: "Description",
+            url: "#description"
+          },
+          {
+            label: "Example",
+            url: "#example"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
       }
-      // {
-      //   label: "foo",
-      //   url: "/foo"
-      // },
-      // {
-      //   subGroupName: "Layers",
-      //   subGroup: [
-      //     {
-      //       label: "bar",
-      //       url: "#bar"
-      //     }
-      //   ]
-      // }
     ]
   }
 ];
