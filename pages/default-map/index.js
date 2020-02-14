@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import defaultMap from "../../assets/examples/default-map.jpg";
+
 
 const Home = () => {
     return (
@@ -60,6 +62,12 @@ const Home = () => {
                             The options for setting the bounds of the map control's camera.
                         </div>
                     </p>
+                    <div>
+                        <h2 id="example">Example:</h2>
+                        <img style={{
+                            width: '100%'
+                        }} src={defaultMap} />
+                    </div>
                     <h2 id="code">Code:</h2>
                     <pre>
             <code className="language-jsx">
