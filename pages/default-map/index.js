@@ -15,10 +15,10 @@ const Home = () => {
             Simple example of react-azure-maps using React Functional Component.
           </h3>
           <p>That sample will render map with all their maps basic features.</p>
+          <p className="tip">
+            Map must have styled container with specified height.
+          </p>
           <p>
-            <div className="tip">
-              Map must have styled container with specified height.
-            </div>
             AzureMap component should be wrap by AzureMapProvider. Map also must
             have container that specifies the height of the map.
           </p>

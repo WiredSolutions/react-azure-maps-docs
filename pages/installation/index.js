@@ -18,7 +18,7 @@ const Installation = () => {
               To inject react-azure-maps to your React App you must just add
               package by your package manager and get Azure Map subscription key
             </p>
-            <div className="tip">
+            <p className="tip">
               Get an Azure Maps key at&nbsp;
               <a
                 href="https://azure.com/maps"
@@ -27,7 +27,7 @@ const Installation = () => {
               >
                 https://azure.com/maps
               </a>
-            </div>
+            </p>
           </div>
           <h2 id="npm">NPM</h2>
 
