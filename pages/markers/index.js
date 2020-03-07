@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import markersImg from "../../assets/examples/markers.png";
+import markersImg from "../../assets/examples/Markers.png";
 
 
 const Markers = () => {
