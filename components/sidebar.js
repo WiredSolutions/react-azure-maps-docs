@@ -40,8 +40,155 @@ const menuGroups = [
         url: "/default-map",
         children: [
           {
-            label: "Description",
-            url: "#description"
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      },
+      {
+        label: "Layers",
+        url: "/layers",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      },
+      {
+        label: "Bubble layer",
+        url: "/bubble-layer",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Markers",
+        url: "/markers",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Shape",
+        url: "/shape",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Popup",
+        url: "/popup",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Route",
+        url: "/route",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Arrow lines & Image Sprite",
+        url: "/image-sprite",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Style Controls",
+        url: "/controls",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      },
+      {
+        label: "Chronopleth map",
+        url: "/chronopleth",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      },
+      {
+        label: "Custom Control",
+        url: "/custom-control",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      }, {
+        label: "Async pin position",
+        url: "/async",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
           },
           {
             label: "Code",
@@ -95,18 +242,18 @@ const Group = ({ linkGroup }) => {
                 subGroupName={subGroupName}
               />
             ) : (
-              <li
-                key={label}
-                className={router.pathname === url ? "active" : ""}
-              >
-                <Link href={url}>
-                  <a className="sidebar__link">{label}</a>
-                </Link>
-                {router.pathname === url && (
-                  <ChildrenLinks children={children} />
-                )}
-              </li>
-            )
+                <li
+                  key={label}
+                  className={router.pathname === url ? "active" : ""}
+                >
+                  <Link href={url}>
+                    <a className="sidebar__link">{label}</a>
+                  </Link>
+                  {router.pathname === url && (
+                    <ChildrenLinks children={children} />
+                  )}
+                </li>
+              )
         )}
       </ul>
     </li>

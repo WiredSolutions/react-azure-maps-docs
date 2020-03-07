@@ -3,7 +3,7 @@ import Head from "next/head";
 import defaultMap from "../../assets/examples/default-map.jpg";
 
 
-const Home = () => {
+const Default = () => {
     return (
         <div>
             <Head>
@@ -13,17 +13,15 @@ const Home = () => {
             <main className="page">
                 <div className="page__content">
                     <h1>Default Map Example</h1>
-                    <h2 id="description">Description:</h2>
-                    <h3>
-                        Simple example of react-azure-maps using React Functional Component.
-                    </h3>
+
                     <p>That sample will render map with all their maps basic features.</p>
+
+                    <h2 id="usage">Usage:</h2>
+                    <p>
+                        AzureMap component should be wrap by <code>AzureMapProvider</code>.
+                    </p>
                     <p className="tip">
                         Map must have styled container with specified height.
-                    </p>
-                    <p>
-                        AzureMap component should be wrap by AzureMapProvider. Map also must
-                        have container that specifies the height of the map.
                     </p>
 
                     <ul>
@@ -91,4 +89,4 @@ export default DefaultMap
     );
 };
 
-export default Home;
+export default Default;
