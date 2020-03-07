@@ -44,10 +44,6 @@ const menuGroups = [
             url: "#description"
           },
           {
-            label: "Example",
-            url: "#example"
-          },
-          {
             label: "Code",
             url: "#code"
           }
