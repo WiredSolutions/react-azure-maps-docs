@@ -16,7 +16,7 @@ const Installation = () => {
             <h3> Map Setup </h3>
             <p>
               To inject react-azure-maps to your React App you must just add
-              package by your package manager and get Azure Map subscription key
+              package by your package manager and get Azure Map <code>subscription key</code>
             </p>
             <p className="tip">
               Get an Azure Maps key at&nbsp;
@@ -42,9 +42,9 @@ const Installation = () => {
 
           <h2 id="usage">Basic Usage</h2>
           <p>
-            Create IAzureMapOptions object with you key and initial map
+            Create <code>IAzureMapOptions</code> object with you <code>key</code> and initial map
             properties then pass it as options props in Azure Map. AzureMap
-            component should be wrap by AzureMapProvider. Map also must have
+            component should be wrap by <code>AzureMapProvider</code>. Map also must have
             contiarner that specifies the height of the map.
           </p>
           <p></p>

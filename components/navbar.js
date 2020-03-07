@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/wired-logo.png";
+import Router from "next/router";
 import "../styles/navbar.scss";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
+
+  useEffect(() => {
+    const handleRouteChange = url => {
+      setActive(false);
+    };
+
+    Router.events.on("routeChangeStart", handleRouteChange);
+    return () => {
+      Router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, []);
 
   const sidebarClass = isActive ? "navbar--sidebar-active" : "";
 
