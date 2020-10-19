@@ -50,6 +50,20 @@ const menuGroups = [
         ]
       },
       {
+        label: "Map Ref",
+        url: "/map-ref",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
+      },
+      {
         label: "Layers",
         url: "/layers",
         children: [
