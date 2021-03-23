@@ -62,6 +62,19 @@ const menuGroups = [
             url: "#code"
           }
         ]
+      },{
+        label: "Live with NEXT.JS",
+        url: "/live-example-map",
+        children: [
+          {
+            label: "Usage",
+            url: "#usage"
+          },
+          {
+            label: "Code",
+            url: "#code"
+          }
+        ]
       },
       {
         label: "Layers",
@@ -278,7 +291,7 @@ const Sidebar = () => (
   <nav className="sidebar">
     <ul className="sidebar__links">
       {menuGroups.map(group => (
-        <Group key={group.groupName} linkGroup={group}></Group>
+        <Group key={group.groupName} linkGroup={group}/>
       ))}
     </ul>
   </nav>
