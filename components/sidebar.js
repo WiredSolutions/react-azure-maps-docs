@@ -29,6 +29,20 @@ const menuGroups = [
             url: "#usage"
           }
         ]
+      },
+      {
+        label: "Datasources",
+        url: "/datasources",
+        children: [
+          {
+            label: "GeoJSON Datasource",
+            url: "#geojson"
+          },
+          {
+            label: "VectorTile Datasource",
+            url: "#vector"
+          }
+        ]
       }
     ]
   },
