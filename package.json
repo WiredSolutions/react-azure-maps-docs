@@ -13,7 +13,7 @@
     "next": "9.5.5",
     "next-images": "^1.3.0",
     "node-sass": "^4.13.1",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.24.0",
     "react": "16.12.0",
     "react-azure-maps": "^0.1.5",
     "react-dom": "16.12.0"
